@@ -1,13 +1,13 @@
 {
-  "name": "bitcore-node",
-  "description": "Full node with extended capabilities using Bitcore and Bitcoin Core",
+  "name": "bitcore-node-zcoin",
+  "description": "Full node with extended capabilities using Bitcore and Zcoin Core",
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.1.3",
   "main": "./index.js",
-  "repository": "git://github.com/bitpay/bitcore-node.git",
-  "homepage": "https://github.com/bitpay/bitcore-node",
+  "repository": "git@github.com:Technoprenerd/bitcore-node-zcoin.git",
+  "homepage": "git@github.com:Technoprenerd/bitcore-node-zcoin",
   "bugs": {
-    "url": "https://github.com/bitpay/bitcore-node/issues"
+    "url": "git@github.com:Technoprenerd/bitcore-node-zcoin/issues"
   },
   "contributors": [
     {
@@ -27,8 +27,9 @@
     }
   ],
   "bin": {
-    "bitcore-node": "./bin/bitcore-node",
-    "bitcoind": "./bin/bitcoind"
+    "bitcore-node-zcoin": "./bin/bitcore-node-zcoin",
+    // "bitcoind": "./bin/bitcoind"
+    // Where is zcoin node located?
   },
   "scripts": {
     "preinstall": "./scripts/download",
@@ -40,13 +41,13 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
-    "bitcoin",
-    "bitcoind"
-  ],
+    "zcoin",
+    "zcoind"
+  ],     // which versions do we need to have for zcoin rpc and lib?
   "dependencies": {
     "async": "^1.3.0",
-    "bitcoind-rpc": "^0.6.0",
-    "bitcore-lib": "^0.13.13",
+    "bitcoind-rpc-zcoin": "^0.6.0",
+    "bitcore-lib-zcoin": "^0.13.13",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
@@ -67,7 +68,7 @@
   },
   "devDependencies": {
     "benchmark": "1.0.0",
-    "bitcore-p2p": "^1.1.0",
+    "bitcore-p2p-zcoin": "^1.1.0",
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",

@@ -4,9 +4,9 @@ var path = require('path');
 var async = require('async');
 var spawn = require('child_process').spawn;
 
-var BitcoinRPC = require('bitcoind-rpc');
+var BitcoinRPC = require('bitcoind-rp-zcoin');
 var rimraf = require('rimraf');
-var bitcore = require('bitcore-lib');
+var bitcore = require('bitcore-lib-zcoin');
 var chai = require('chai');
 var should = chai.should();
 
@@ -19,11 +19,13 @@ var BitcoinService = index.services.Bitcoin;
 describe('Bitcoin Cluster', function() {
   var node;
   var daemons = [];
-  var execPath = path.resolve(__dirname, '../bin/bitcoind');
+  var execPath = path.resolve(__dirname, './.bitcore/data/zcoind');
+  //var execPath = path.resolve(__dirname, '../bin/bitcoind');
+  // + changes  of bitcoin.conf to zcoin.conf
   var nodesConf = [
     {
       datadir: path.resolve(__dirname, './data/node1'),
-      conf: path.resolve(__dirname, './data/node1/bitcoin.conf'),
+      conf: path.resolve(__dirname, './data/node1/zcoin.conf'),
       rpcuser: 'bitcoin',
       rpcpassword: 'local321',
       rpcport: 30521,
@@ -32,7 +34,7 @@ describe('Bitcoin Cluster', function() {
     },
     {
       datadir: path.resolve(__dirname, './data/node2'),
-      conf: path.resolve(__dirname, './data/node2/bitcoin.conf'),
+      conf: path.resolve(__dirname, './data/node2/zcoin.conf'),
       rpcuser: 'bitcoin',
       rpcpassword: 'local321',
       rpcport: 30522,
@@ -41,7 +43,7 @@ describe('Bitcoin Cluster', function() {
     },
     {
       datadir: path.resolve(__dirname, './data/node3'),
-      conf: path.resolve(__dirname, './data/node3/bitcoin.conf'),
+      conf: path.resolve(__dirname, './data/node3/zcoin.conf'),
       rpcuser: 'bitcoin',
       rpcpassword: 'local321',
       rpcport: 30523,
@@ -51,7 +53,7 @@ describe('Bitcoin Cluster', function() {
   ];
 
   before(function(done) {
-    log.info('Starting 3 bitcoind daemons');
+    log.info('Starting 3 zcoind daemons');
     this.timeout(60000);
     async.each(nodesConf, function(nodeConf, next) {
       var opts = [

@@ -1,5 +1,17 @@
-Bitcore Node
+Bitcore Node Zcoin
 ============
+
+Work in progress.
+
+Todo:
+
+Download pre compiled version of Zcoind.
+Lib/cli/main.js - Zcoin command structure check
+lib/services/bitcoind.js - Zcoin RPC login check (90)
+test/data/default&bitcoin.conf - ZCoin RPC checks 
+
+config:
+/.bitcore/data/zcoind
 
 A Bitcoin full node for building applications and services with Node.js. A node is extensible and can be configured to run additional services. At the minimum a node has an interface to [Bitcoin Core with additional indexing](https://github.com/bitpay/bitcoin/tree/0.12.1-bitcore) for more advanced address queries. Additional services can be enabled to make a node more useful such as exposing new APIs, running a block explorer and wallet service.
 
