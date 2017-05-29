@@ -24,6 +24,13 @@ change from npm repository to github url in packages, for the time being:
     "bitcore-lib-zcoin": "git://github.com/technoprenerd/bitcore-lib-zcoin.git",
     "bitcore-p2p-zcoin": "git://github.com/technoprenerd/bitcore-p2p-zcoin.git",
 
+Same in lib/scaffold/create.js:
+and chnangs in default-config.js
+  Depencencies atm from github.
+
+    'bitcore-lib-zcoin': '^' + bitcore.version,
+    'bitcore-node-zcoin': version
+
 
 ```
 
