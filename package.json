@@ -31,8 +31,6 @@
     "bitcoind": "./bin/zcoind"
   },
   "scripts": {
-    "preinstall": "./scripts/download",
-    "verify": "./scripts/download --skip-bitcoin-download --verify-bitcoin-download",
     "test": "mocha -R spec --recursive",
     "regtest": "./scripts/regtest",
     "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
@@ -45,8 +43,8 @@
   ],
   "dependencies": {
     "async": "^1.3.0",
-    "bitcoind-rpc-zcoin": "^0.6.0",
-    "bitcore-lib-zcoin": "^0.13.13",
+    "bitcoind-rpc-zcoin": "git://github.com/technoprenerd/bitcore-rpc-zcoin.git",
+    "bitcore-lib-zcoin": "git://github.com/technoprenerd/bitcore-lib-zcoin.git",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
@@ -67,7 +65,7 @@
   },
   "devDependencies": {
     "benchmark": "1.0.0",
-    "bitcore-p2p-zcoin": "^1.1.0",
+    "bitcore-p2p-zcoin": "git://github.com/technoprenerd/bitcore-p2p-zcoin.git",
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",

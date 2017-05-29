@@ -6,12 +6,24 @@ Work in progress.
 Todo:
 
 ```bash
-Download pre compiled version of Zcoind. 
+Download pre compiled version of Zcoind, using /script/download and shasum verify
+
 Lib/cli/main.js - Zcoin command structure check
 lib/services/bitcoind.js - Zcoin RPC login check (90)
 test/data/default&bitcoin.conf - ZCoin RPC checks 
 config:
 /.bitcore/data/zcoind
+
+
+removed compiled download of zcoind package.json for the time being:
+    // "preinstall": "./scripts/download",
+    // "verify": "./scripts/download --skip-bitcoin-download --verify-bitcoin-download",
+
+change from npm repository to github url in packages, for the time being:
+    "bitcoind-rpc-zcoin": "git://github.com/technoprenerd/bitcore-rpc-zcoin.git",
+    "bitcore-lib-zcoin": "git://github.com/technoprenerd/bitcore-lib-zcoin.git",
+    "bitcore-p2p-zcoin": "git://github.com/technoprenerd/bitcore-p2p-zcoin.git",
+
 
 ```
 
