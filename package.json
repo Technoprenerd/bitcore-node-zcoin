@@ -28,8 +28,7 @@
   ],
   "bin": {
     "bitcore-node-zcoin": "./bin/bitcore-node-zcoin",
-    // "bitcoind": "./bin/bitcoind"
-    // Where is zcoin node located?
+    "bitcoind": "./bin/zcoind"
   },
   "scripts": {
     "preinstall": "./scripts/download",
@@ -43,7 +42,7 @@
   "tags": [
     "zcoin",
     "zcoind"
-  ],     // which versions do we need to have for zcoin rpc and lib?
+  ],
   "dependencies": {
     "async": "^1.3.0",
     "bitcoind-rpc-zcoin": "^0.6.0",
