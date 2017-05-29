@@ -28,7 +28,7 @@
   ],
   "bin": {
     "bitcore-node-zcoin": "./bin/bitcore-node-zcoin",
-    "bitcoind": "./bin/zcoind"
+    "zcoind": "./bin/zcoind"
   },
   "scripts": {
     "test": "mocha -R spec --recursive",
