@@ -379,7 +379,7 @@ describe('Bitcoin Service', function() {
         dbcache: 8192,
         maxuploadtarget: 1024,
         port: 20000,
-        rpcport: 50001,
+        rpcport: 8888,
         rpcallowip: '127.0.0.1',
         rpcuser: 'bitcoin',
         rpcpassword: 'local321',
@@ -1752,7 +1752,7 @@ describe('Bitcoin Service', function() {
       bitcoind.spawn.configPath = 'testdir/bitcoin.conf';
       bitcoind.spawn.datadir = 'testdir';
       bitcoind.spawn.config = {};
-      bitcoind.spawn.config.rpcport = 20001;
+      bitcoind.spawn.config.rpcport = 8888;
       bitcoind.spawn.config.rpcuser = 'bitcoin';
       bitcoind.spawn.config.rpcpassword = 'password';
       bitcoind.spawn.config.zmqpubrawtx = 'tcp://127.0.0.1:30001';
@@ -1927,7 +1927,7 @@ describe('Bitcoin Service', function() {
       bitcoind.spawn.configPath = 'testdir/bitcoin.conf';
       bitcoind.spawn.datadir = 'testdir';
       bitcoind.spawn.config = {};
-      bitcoind.spawn.config.rpcport = 20001;
+      bitcoind.spawn.config.rpcport = 8888;
       bitcoind.spawn.config.rpcuser = 'bitcoin';
       bitcoind.spawn.config.rpcpassword = 'password';
       bitcoind.spawn.config.zmqpubrawtx = 'tcp://127.0.0.1:30001';
@@ -1957,7 +1957,7 @@ describe('Bitcoin Service', function() {
       bitcoind.spawn.configPath = 'testdir/bitcoin.conf';
       bitcoind.spawn.datadir = 'testdir';
       bitcoind.spawn.config = {};
-      bitcoind.spawn.config.rpcport = 20001;
+      bitcoind.spawn.config.rpcport = 8888;
       bitcoind.spawn.config.rpcuser = 'bitcoin';
       bitcoind.spawn.config.rpcpassword = 'password';
       bitcoind.spawn.config.zmqpubrawtx = 'tcp://127.0.0.1:30001';
