@@ -43,7 +43,7 @@
   ],
   "dependencies": {
     "async": "^1.3.0",
-    "bitcoind-rpc-zcoin": "git://github.com/technoprenerd/bitcore-rpc-zcoin.git",
+    "bitcoind-rpc-zcoin": "git://github.com/technoprenerd/bitcoind-rpc-zcoin.git",
     "bitcore-lib-zcoin": "git://github.com/technoprenerd/bitcore-lib-zcoin.git",
     "bitcore-p2p-zcoin": "git://github.com/technoprenerd/bitcore-p2p-zcoin.git",
     "body-parser": "^1.13.3",
