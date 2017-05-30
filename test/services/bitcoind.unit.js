@@ -769,7 +769,7 @@ describe('Bitcoin Service', function() {
         }
       };
       var bitcoind = new BitcoinService(config);
-      bitcoind._getDefaultConf().rpcport.should.equal(8332);
+      bitcoind._getDefaultConf().rpcport.should.equal(8888);
     });
     it('will get default rpc port for testnet', function() {
       var config = {
@@ -782,7 +782,7 @@ describe('Bitcoin Service', function() {
         }
       };
       var bitcoind = new BitcoinService(config);
-      bitcoind._getDefaultConf().rpcport.should.equal(18332);
+      bitcoind._getDefaultConf().rpcport.should.equal(18888);
     });
     it('will get default rpc port for regtest', function() {
       bitcore.Networks.enableRegtest();
@@ -796,7 +796,7 @@ describe('Bitcoin Service', function() {
         }
       };
       var bitcoind = new BitcoinService(config);
-      bitcoind._getDefaultConf().rpcport.should.equal(18332);
+      bitcoind._getDefaultConf().rpcport.should.equal(18888);
     });
   });
 
