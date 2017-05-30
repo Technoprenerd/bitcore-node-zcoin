@@ -12,7 +12,7 @@ describe('#defaultConfig', function() {
   it('will return expected configuration', function() {
     var config = JSON.stringify({
       network: 'livenet',
-      port: 3001,
+      port: 8168,
       services: [
         'bitcoind',
         'web'
@@ -45,7 +45,7 @@ describe('#defaultConfig', function() {
     var info = defaultConfig();
     info.path.should.equal(home + '/.bitcore');
     info.config.network.should.equal('livenet');
-    info.config.port.should.equal(3001);
+    info.config.port.should.equal(8168);
     info.config.services.should.deep.equal(['bitcoind', 'web']);
     var bitcoind = info.config.servicesConfig.bitcoind;
     should.exist(bitcoind);
@@ -55,7 +55,7 @@ describe('#defaultConfig', function() {
   it('will include additional services', function() {
     var config = JSON.stringify({
       network: 'livenet',
-      port: 3001,
+      port: 8168,
       services: [
         'bitcoind',
         'web',
