@@ -46,8 +46,8 @@ describe('Bitcoind Functionality', function() {
       bitcoind = require('../').services.Bitcoin({
         spawn: {
           datadir: datadir,
-          exec: path.resolve(__dirname, './.bitcore/data/zcoind')
-          // exec: path.resolve(__dirname, '../bin/bitcoind')
+          //exec: path.resolve(__dirname, './.bitcore/data/zcoind')
+          exec: path.resolve(__dirname, '../bin/zcoind')
         },
         node: {
           network: regtestNetwork,

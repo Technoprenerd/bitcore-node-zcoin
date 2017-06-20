@@ -19,8 +19,8 @@ var BitcoinService = index.services.Bitcoin;
 describe('Bitcoin Cluster', function() {
   var node;
   var daemons = [];
-  var execPath = path.resolve(__dirname, './.bitcore/data/zcoind');
-  //var execPath = path.resolve(__dirname, '../bin/bitcoind');
+  //var execPath = path.resolve(__dirname, './.bitcore/data/zcoind');
+  var execPath = path.resolve(__dirname, '../bin/zcoind');
   // + changes  of bitcoin.conf to zcoin.conf
   var nodesConf = [
     {

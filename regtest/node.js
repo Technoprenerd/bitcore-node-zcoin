@@ -53,8 +53,8 @@ describe('Node Functionality', function() {
             config: {
               spawn: {
                 datadir: datadir,
-                exec: path.resolve(__dirname, './.bitcore/data/zcoind')
-                //exec: path.resolve(__dirname, '../bin/bitcoind')
+                //exec: path.resolve(__dirname, './.bitcore/data/zcoind')
+                exec: path.resolve(__dirname, '../bin/zcoind')
               }
             }
           }
