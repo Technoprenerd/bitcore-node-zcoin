@@ -1,0 +1,2 @@
+[remote "origin"]
+    lfsurl = ssh://git@github.com/Technoprenerd/bitcore-node-zcoin.git
