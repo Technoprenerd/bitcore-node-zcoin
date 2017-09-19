@@ -3,9 +3,8 @@ Bitcore Node Zcoin
 
 Work in progress.
 
-Due to issues with Git-LFS, the zcoind binary needs to be downloaded from somewhere else.
-Place zcoind in /bin/.
 
+Binary is downloaded using Git-LFS... still issues.
 
 Todo:
 
